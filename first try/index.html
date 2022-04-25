@@ -5,14 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Saas/compile.css">
+    <link rel="stylesheet" href="costumeStyle.css">
     <title>Document</title>
 </head>
 <body>
-  <div class="nav navbar navbar-expand-lg">
+  <nav class="navbar navbar-expand-lg navbar-dark py-3">
     <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="images/Logo.svg" alt="logo">
+        <a href="#" class="navbar-brand">
+          <img class="img-fluid w-60" src="./images/Logo.svg" alt="logo">
+        </a>
+        
+        <button class="navbar-toggler btn-primary bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item pe-4">
+                    <a href="" class="nav-link fw-bold ">
+                        <img class="pb-05" src="images/plus.svg" alt="icon">
+                        Déposer une annonce
+                    </a>
+                </li>
+                <li class="nav-item pe-4">
+                    <a href="" class="nav-link fw-bold">
+                        <img class="pb-05" src="images/hart.svg" alt="icon">
+                        Favoris
+                    </a>
+                </li>
+                <li class="nav-item pe-4">
+                    <a href="" class="nav-link fw-bold">
+                        <img class="pb-05" src="images/Bell.svg" alt="icon">
+                        Notifications
+                    </a>
+                </li>
+                <li class="nav-item ps-2">
+                    <a href=""><button type="button" class="btn btn-primary fw-bold">Se Connecter</button></a>
+                </li>
+            </ul>
+        </div>
     </div>
-  </div>
+</nav>
+<header class="text-center" class="text-secondary-color">
+    <div class="container">
+        <div class="d-sm-flex">
+            <div>
+                <h1 class="primary-color">ECHRI & EKRI</h1>
+                <p>
+                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.                    
+                </p>
+            </div>
+            <img class="img-fluid w-20" src="images/kid-hero-pic.svg" alt="photo">
+        </div>
+    </div>
+</header>       
+
+<script src="../js/bootstrap.min.js"></script>
+
+
 </body> 
 </html>
+
