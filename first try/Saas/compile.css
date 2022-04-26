@@ -8284,6 +8284,10 @@ fieldset:disabled .btn {
   font-size: 1.25rem !important;
 }
 
+.fs-55 {
+  font-size: 1.05rem !important;
+}
+
 .fs-6 {
   font-size: 1rem !important;
 }
@@ -8988,6 +8992,9 @@ fieldset:disabled .btn {
   .ms-sm-2 {
     margin-left: 0.5rem !important;
   }
+  .ms-sm-25 {
+    margin-left: 0.75rem !important;
+  }
   .ms-sm-3 {
     margin-left: 1rem !important;
   }
@@ -9129,6 +9136,9 @@ fieldset:disabled .btn {
   .ps-sm-2 {
     padding-left: 0.5rem !important;
   }
+  .ps-sm-25 {
+    padding-left: 0.75rem !important;
+  }
   .ps-sm-3 {
     padding-left: 1rem !important;
   }
@@ -9150,6 +9160,9 @@ fieldset:disabled .btn {
 }
 
 @media (min-width: 768px) {
+  .w-md-180{
+    width: 180px;
+  }
   .float-md-start {
     float: left !important;
   }
@@ -9727,8 +9740,8 @@ fieldset:disabled .btn {
 }
 
 @media (min-width: 992px) {
-  .w-lg-75 {
-    width: 75% !important;
+  .w-lg-90 {
+    width: 74% !important;
   }
   .float-lg-start {
     float: left !important;
@@ -10307,6 +10320,9 @@ fieldset:disabled .btn {
 }
 
 @media (min-width: 1200px) {
+  .w-xl-200{
+    width: 220px !important;
+  }
   .float-xl-start {
     float: left !important;
   }
@@ -10884,6 +10900,9 @@ fieldset:disabled .btn {
 }
 
 @media (min-width: 1400px) {
+  .w-xxl-200{
+    width: 260px !important;
+  }
   .float-xxl-start {
     float: left !important;
   }
