@@ -46,19 +46,67 @@
         </div>
     </div>
 </nav>
-<header class="text-center" class="text-secondary-color">
+<header class="text-center text-md-start mt-3">
     <div class="container">
-        <div class="d-sm-flex">
-            <div>
-                <h1 class="primary-color">ECHRI & EKRI</h1>
-                <p>
+        <div class="d-sm-flex align-items-center">
+            <div class="">
+                <h1 class="text-primary">ECHRI & EKRI</h1>
+                <p class="fs-4 w-lg-75 pe-md-5 text-secondary">
                     It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.                    
                 </p>
             </div>
-            <img class="img-fluid w-20" src="images/kid-hero-pic.svg" alt="photo">
+            <img class="img-fluid w-40 d-none d-md-block" src="images/hero pic.png" alt="photo">
+        </div>      
+    </div>
+</header>
+<main>
+    <div class="container">
+        <div class="container w-75">
+            <button class="btn btn-secondary" type="button">
+                <img src="images/rechercher icon.svg" alt="">
+                Rapide
+            </button>
+            <button class="btn btn-primary" type="button">
+                <img src="images/advanced icon.svg" alt="">
+                Avancée
+            </button>
+        </div>
+        <div class="container d-flex w-75 py-2 mt-1  bg-secondary rounded text-light">
+            <div class=" me-4">
+                <label class="" for="wilayaDropDown">Wilaya</label>
+                <select class="form-select rounded w-200" id="wilayaDropDown">
+                <option selected>Wilaya...</option>
+                <option value="1">Alger</option>
+                <option value="2">Blida</option>
+                <option value="3">Tbessa</option>
+                </select>
+            </div>
+
+            <div class="me-4">
+                <label class="" for="TypeDropDown">Type</label>
+                <select class="form-select rounded w-200" id="TypeDropDown">
+                <option selected>Type de bien...</option>
+                <option value="1">Maison/Villa</option>
+                <option value="2">Appartement</option>
+                <option value="3">Studio</option>
+                </select> 
+            </div>
+            
+            <div class="me-4">
+                <label class="" for="prix">Prix</label>
+                <input type="text" class="form-control rounded w-200" id="prix" placeholder="Budget max">
+            </div>
+
+            <div class="align-self-end">
+                <button class="btn btn-secondary bg-primary pb-2" type="button">
+                    <img src="images/rechercher icon.svg" alt="">
+                </button>     
+            </div>
         </div>
     </div>
-</header>       
+    
+
+</main>          
 
 <script src="../js/bootstrap.min.js"></script>
 

@@ -7527,6 +7527,10 @@ fieldset:disabled .btn {
   width: 25% !important;
 }
 
+.w-40 {
+  width: 40% !important;
+}
+
 .w-50 {
   width: 50% !important;
 }
@@ -8050,6 +8054,10 @@ fieldset:disabled .btn {
 
 .ms-2 {
   margin-left: 0.5rem !important;
+}
+
+.ms-25 {
+  margin-left: 0.75rem !important;
 }
 
 .ms-3 {
@@ -9719,6 +9727,9 @@ fieldset:disabled .btn {
 }
 
 @media (min-width: 992px) {
+  .w-lg-75 {
+    width: 75% !important;
+  }
   .float-lg-start {
     float: left !important;
   }
