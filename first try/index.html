@@ -40,12 +40,84 @@
                     </a>
                 </li>
                 <li class="nav-item ps-2">
-                    <a href="MonCompte.html"><button type="button" class="btn btn-primary fw-bold">Se Connecter</button></a>
+                    <button type="button" class="btn btn-primary fw-bold" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">Se Connecter</button>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
+
+<div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <form class="modal-content">
+            <div class="modal-body">
+                <h3 class="text-center Saira" id="staticBackdropLabel">Se Connecter</h3>
+                <hr class="w-25 mx-auto mt-0 text-primary show-opacity h-3 rounded">
+                <p class="text-center">Vous n'avez pas encore de compte ?  <button class=" text-primary border-0 bg-body" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Créer un compte</button></p>   
+                <button class="btn btn-outline-secondary d-flex gap-1 align-items-center mx-auto d-block bg-body rounded py-2 px-3 mb-3">
+                    <img class="img-fluid" src="images/icons/Google icon.svg" alt="icon">
+                    <p class="Poppins text-secondary mb-0">Se connecter avec Google</p>
+                </button>
+                <div class="d-flex align-items-center justify-content-center my-3">
+                    <hr class="w-25">
+                    <p class="mx-2 my-0">ou</p>
+                    <hr class="w-25">
+                </div>
+                <div class="mb-3 mx-5 px-5">
+                    <input type="email" class="form-control bg-light" id="floatingInput" placeholder="Votre E-mail" required>
+                </div>
+                <div class="mb-3 mx-5 px-5">
+                    <input type="password" class="form-control bg-light" id="floatingPassword" placeholder="Mot de passe" required>
+                    <p class="text-end fs-7">mot de passe oublié ?</p>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <button type="submit" class="btn btn-lg btn-primary rounded-pill">Se connecter</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <form class="modal-content">
+            <div class="modal-body">
+                <h3 class="text-center Roboto" id="staticBackdropLabel">Créer un compte</h3>
+                <hr class="w-25 mx-auto mt-0 text-primary show-opacity h-3 rounded">
+                <p class="text-center">Vous avez déjà un compte ?<button class=" text-primary border-0 bg-body" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Se connecter</button></p>   
+                <button class="btn btn-outline-secondary d-flex gap-1 align-items-center mx-auto d-block bg-body rounded py-2 px-3 mb-3">
+                    <img class="img-fluid" src="images/icons/Google icon.svg" alt="icon">
+                    <p class="Poppins text-secondary mb-0">Inscrivez-vous avec Google</p>
+                </button>
+                <div class="d-flex align-items-center justify-content-center my-3">
+                    <hr class="w-25">
+                    <p class="mx-2 my-0">ou</p>
+                    <hr class="w-25">
+                </div>
+                <div class="d-flex gap-2 mb-3 mx-5 px-5">
+                    <input type="text" class="form-control bg-light w-50" id="floatingInput" placeholder="Nom" required>
+                    <input type="text" class="form-control bg-light w-50" id="floatingInput" placeholder="Prénom" required>
+                </div>
+                <div class="mb-3 mx-5 px-5">
+                    <input type="email" class="form-control bg-light" id="floatingInput" placeholder="Votre E-mail" required> 
+                </div>
+                <div class="mb-3 mx-5 px-5">
+                    <input type="password" class="form-control bg-light" id="floatingPassword" placeholder="Mot de passe" required>
+                </div>
+                <div class="form-check ms-5 fs-6 mb-3">
+                    <input class="form-check-input" type="checkbox" name="ConditionsBox" id="term&Privacy" checked required>
+                    <label class="form-check-label" for="term&Privacy">
+                    Acceptez nos <a class="no-decoration fw-semibold" href="">Conditions d'utilisation et Confidentialité.</a>
+                    </label>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <button type="submit" class="btn btn-lg btn-primary rounded-pill">Créer un compte</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
 <header class="text-center text-md-start mt-3">
     <div class="container">
         <div class="d-sm-flex align-items-center">
@@ -107,14 +179,14 @@
             </div>
             <div class="d-flex justify-content-center mt-3">
                 <div class="form-check  fs-55">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
+                    <input class="form-check-input" type="radio" name="radiobox" id="louerbox">
+                    <label class="form-check-label" for="louerbox">
                     Louer
                     </label>
                 </div>
                 <div class="form-check ms-5 fs-55">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                    <label class="form-check-label" for="flexCheckChecked">
+                    <input class="form-check-input" type="radio" name="radiobox" id="acheterbox" checked>
+                    <label class="form-check-label" for="acheterbox">
                     Acheter
                     </label>
                 </div>

@@ -30,7 +30,7 @@
   --bs-dark: #212529;
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.144), rgba(0, 0, 0, 0.194));
 }
 
 *,
@@ -88,6 +88,11 @@ h1, .h1 {
 }
 
 @font-face {
+  font-family: Saira; 
+  src: url(../Fonts/Saira-Regular.ttf);
+}
+
+@font-face {
   font-family: Roboto-Mono; 
   src: url(../Fonts/RobotoMono-Regular.ttf);
 }
@@ -103,6 +108,10 @@ h1, .h1 {
 
 .Poppins{
   font-family: 'Poppins';
+}
+
+.Saira{
+  font-family: 'Saira';
 }
 
 h2, .h2 {
@@ -7614,6 +7623,10 @@ fieldset:disabled .btn {
   height: 1% !important;
 }
 
+.h-3{
+  height: 3px !important;
+}
+
 .h-25 {
   height: 25% !important;
 }
@@ -8516,11 +8529,8 @@ fieldset:disabled .btn {
 }
 
 .bg-primary-light {
-  background: rgb(65,82,159);
-  background: -moz-linear-gradient(328deg, rgba(65,82,159,1) 0%, rgba(65,82,159,0.8018557764902836) 32%, rgba(255,255,255,0.9054972330729166) 100%);
-  background: -webkit-linear-gradient(328deg, rgba(65,82,159,1) 0%, rgba(65,82,159,0.8018557764902836) 32%, rgba(255,255,255,0.9054972330729166) 100%);
-  background: linear-gradient(328deg, rgba(65,82,159,1) 0%, rgba(65,82,159,0.8018557764902836) 32%, rgba(255,255,255,0.9054972330729166) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#41529f",endColorstr="#ffffff",GradientType=1);
+  background: rgba(65,82,159,0.1) !important;
+
 }
 
 .bg-secondary {
