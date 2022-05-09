@@ -1,3 +1,58 @@
 .w-200{
     width: 260px;
 }
+
+.adjustable-img{
+    width: 80px;
+    height: 60px;
+    align-self: center;
+}
+
+.raduis-10{
+    border-radius: 10px;
+}
+
+#side-nav{
+    min-width: 250px;
+}
+
+.dropdown-width{
+    min-width: 6rem;
+}
+
+.shodow-inside{
+    box-shadow: 20px 20px 50px 10px #41529f57 inset;
+}
+
+.pic-holder1{
+    width: 500px;
+    height: 400px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.pic-holder2{
+    width: 304px;
+    height: 195px;
+}
+
+.pic-holder{
+    height: 400px;
+}
+
+.raduis-top-right{
+    border-top-right-radius: 0.25rem;
+}
+
+.raduis-bottom-right{
+    border-bottom-right-radius: 0.25rem;
+}
+.d-webkit-none{
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;    
+}
+
+.profil-pic{
+    width: 60px;
+    height: 60px;
+}

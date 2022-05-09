@@ -48,52 +48,52 @@
     </nav>
     
     <main>
-        <section class="d-flex container my-5">
+        <section class="d-flex container my-5 ">
             
-            <div class="border p-3 rounded mt-5 shadow h-100">
-                <h5 class="fw-normal text-center pt-2">Bonjour <span class="fw-bolder text-decoration-underline">BEBBOU</span></h5>
+            <div class="border p-3 rounded mt-5 shadow h-100 " id="side-nav">
+                <h5 class="fw-normal text-center pt-2">Bonjour <span class="fw-bolder text-decoration-underline">Raouf</span></h5>
                 <img src="images/profl pircure.svg" class="rounded-circle d-block mx-auto" alt="photo de profile">
                 <hr>
                 <ul class="no-decoration m-0 p-0">
                     <li class="py-2 ps-2">
-                        <a href="" class="no-decoration text-reset">
+                        <button class="border-0 bg-body p-0 fw-bold text-primary compte-buttons" id="InfoPersoButton">
                             <img src="images/icons/account.svg" alt="icon">
                             Information personnelle
-                        </a>
+                        </button>
                     </li>
                     <li class="py-2 ps-2">
-                        <a href="" class="no-decoration text-reset">
+                        <button class="border-0 bg-body p-0 compte-buttons" id="NotificationButton">
                             <img src="images/icons/notification.svg" alt="icon">
                             Notifications
-                        </a>
+                        </button>
                     </li>
                     <li class="py-2 ps-2">
-                        <a href="" class="no-decoration text-reset">
+                        <button class="border-0 bg-body p-0 compte-buttons" id="MessagesButton">
                             <img src="images/icons/messages.svg" alt="icon">
                             Messages
-                        </a>
+                        </button>
                     </li>
                     <li class="py-2 ps-2">
-                        <a href="" class="no-decoration text-reset">
+                        <button class="border-0 bg-body p-0 compte-buttons" id="FavorisButton">
                             <img src="images/icons/favorite.svg" alt="icon">
                             Favoris
-                        </a>
+                        </button>
                     </li>
                     <li class="py-2 ps-2">
-                        <a href="" class="no-decoration text-reset">
+                        <button class="border-0 bg-body p-0 compte-buttons" id="AnnVuButton">
                             <img src="images/icons/Annonce.svg" alt="icon">
                             Annonces vues
-                        </a>
+                        </button>
                     </li>
                     <li class="py-2 ps-2">
-                        <a href="" class="no-decoration text-reset">
+                        <button class="border-0 bg-body p-0 compte-buttons" id="AnnDepButton">
                             <img src="images/icons/Annonce.svg" alt="icon">
                             Annonces déposées
-                        </a>
+                        </button>
                     </li>
                     <hr>
                     <li class="py-2 ps-2">
-                        <a href="" class="no-decoration text-reset">
+                        <a href="index.html" class="no-decoration text-reset">
                             <img src="images/icons/log-out.svg" alt="icon">
                             Se déconnecter
                         </a>
@@ -101,7 +101,7 @@
                 </ul>
             </div>
 
-            <div class="flex-grow-1 ms-5">
+            <div class="flex-grow-1 ms-5 compte-content" id="infoPerso-content">
                 <h1 class="">Information <span class="text-primary">personnelle</span></h1>
                 <hr class="w-10 h-2 show-opacity text-primary rounded mt-0">
                 <div class="contain d-flex gap-5">
@@ -248,6 +248,191 @@
                     </div>
                 </div>
             </div>
+            <div class="flex-grow-1 ms-5 compte-content d-none" id="notification-content">
+                <h1 class="">Notifications</h1>
+                <hr class="w-10 h-2 show-opacity text-primary rounded mt-0">
+                <div>
+                    <div class="d-flex mt-5 gap-4 bg-light rounded p-3 w-65">
+                        <img src="images/icons/commentaire.svg" alt="commentaire-icon">
+                        <div>
+                            <p class="fs-6 fw-bold Poppins">Commentaire</p>
+                            <p class="fs- fw-regular Poppins">Vous avez reçu un commentaire sur votre annonce de location</p>
+                        </div>
+                        
+                        <img src="images/alger-centre1.jpg" class="adjustable-img rounded text-center" alt="img d'annonce">
+                        
+                    </div>
+                        
+
+
+                </div>
+            </div>
+            <div class="flex-grow-1 ms-5 compte-content d-none" id="Messages-content">
+                <h1 class="">Messages</h1>
+                <hr class="w-10 h-2 show-opacity text-primary rounded mt-0">
+            </div>
+            <div class="flex-grow-1 ms-5 compte-content d-none" id="Favoris-content">
+                <h1 class="">Favoris</h1>
+                <hr class="w-10 h-2 show-opacity text-primary rounded mt-0">
+                <div class="row row-cols-1 row-cols-md-3 g-4 ">
+                    <div class="col-4">
+                        <div class="card shadow">
+                            <img src="images/alger-centre1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="card-title"><span class="text-uppercase">à</span> louer</h5>   
+                                    <h6 class="card-title">12000 DA/Jour</h6>
+                                </div>
+                                <p class="card-text fw-lighter mb-1">Maisson/ville</p>
+                                <p class="card-text fw-lighter mt-0 mb-1">8 piece ●  260 m²</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="card-text fw-lighter m-0 mb-1">Alger, Cheraga</p>  
+                                    <small class="card-text m-0 fs-8">Ajoutée il y’a 40 min</small>
+                                </div>
+                            </div>
+                            <div class="card-img-overlay ps-1">
+                                <div class="bg-dark-light text-light d-inline raduis-10 p-1 position-absolute bottom-45">
+                                    12
+                                    <img src="images/icons/camera icon.svg" class="" alt="">
+                                </div>
+                                <img src="images/icons/left arrow icon.svg" class="position-absolute bottom-70" alt="">
+                                <img src="images/icons/right arrow icon.svg" class="position-absolute bottom-70 start-89 " alt="">
+                                <img src="images/icons/delete.svg" class="position-absolute start-89 top-0 mt-1" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card h-100 shadow">
+                            <img src="images/alger-centre1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="card-title"><span class="text-uppercase">à</span> louer</h5>   
+                                    <h6 class="card-title">12000 DA/Jour</h6>
+                                </div>
+                                <p class="card-text fw-lighter mb-1">Maisson/ville</p>
+                                <p class="card-text fw-lighter mt-0 mb-1">8 piece ●  260 m²</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="card-text fw-lighter m-0 mb-1">Alger, Cheraga</p>  
+                                    <small class="card-text m-0 fs-8">Ajoutée il y’a 40 min</small>
+                                </div>
+                            </div>
+                            <div class="card-img-overlay ps-1">
+                                <div class="bg-dark-light text-light d-inline raduis-10 p-1 position-absolute bottom-45">
+                                    12
+                                    <img src="images/icons/camera icon.svg" class="" alt="">
+                                </div>
+                                <img src="images/icons/left arrow icon.svg" class="position-absolute bottom-70" alt="">
+                                <img src="images/icons/right arrow icon.svg" class="position-absolute bottom-70 start-89 " alt="">
+                                <img src="images/icons/delete.svg" class="position-absolute start-89 top-0 mt-1" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="flex-grow-1 ms-5 compte-content d-none" id="AnnVue-content">
+                <h1 class="">Annonces <span class="text-primary">Vues</span></h1>
+                <hr class="w-10 h-2 show-opacity text-primary rounded mt-0">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col-4">
+                        <div class="card shadow">
+                            <img src="images/alger-centre1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="card-title"><span class="text-uppercase">à</span> louer</h5>   
+                                    <h6 class="card-title">12000 DA/Jour</h6>
+                                </div>
+                                <p class="card-text fw-lighter mb-1">Maisson/ville</p>
+                                <p class="card-text fw-lighter mt-0 mb-1">8 piece ●  260 m²</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="card-text fw-lighter m-0 mb-1">Alger, Cheraga</p>  
+                                    <small class="card-text m-0 fs-8">Vue il y’a 1 h</small>
+                                </div>
+                            </div>
+                            <div class="card-img-overlay ps-1">
+                                <div class="bg-dark-light text-light d-inline raduis-10 p-1 position-absolute bottom-45">
+                                    12
+                                    <img src="images/icons/camera icon.svg" class="" alt="">
+                                </div>
+                                <img src="images/icons/left arrow icon.svg" class="position-absolute bottom-70" alt="">
+                                <img src="images/icons/right arrow icon.svg" class="position-absolute bottom-70 start-89 " alt="">
+                                <img src="images/icons/delete.svg" class="position-absolute start-89 top-0 mt-1" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-grow-1 ms-5 compte-content d-none" id="AnnDep-content">
+                <h1 class="">Annonces <span class="text-primary">déposées</span></h1>
+                <hr class="w-10 h-2 show-opacity text-primary rounded mt-0">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col-4">
+                        <div class="card shadow">
+                            <img src="images/alger-centre1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="card-title"><span class="text-uppercase">à</span> louer</h5>   
+                                    <h6 class="card-title">12000 DA/Jour</h6>
+                                </div>
+                                <p class="card-text fw-lighter mb-1">Maisson/ville</p>
+                                <p class="card-text fw-lighter mt-0 mb-1">8 piece ●  260 m²</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="card-text fw-lighter m-0 mb-1">Alger, Cheraga</p>  
+                                    <small class="card-text m-0 fs-8 text-end">
+                                        <img src="images/icons/commentaire.svg" class="w-30" alt="">
+                                        (2)
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="card-img-overlay ps-1">
+                                <div class="bg-dark-light text-light d-inline raduis-10 p-1 position-absolute bottom-45">
+                                    12
+                                    <img src="images/icons/camera icon.svg" class="" alt="">
+                                </div>
+                                <img src="images/icons/left arrow icon.svg" class="position-absolute bottom-70" alt="">
+                                <img src="images/icons/right arrow icon.svg" class="position-absolute bottom-70 start-89 " alt="">
+                                <img src="images/icons/delete.svg" class="position-absolute start-89 top-0 mt-1" alt="">
+                                <img src="images/icons/edit.svg" class="position-absolute start-78 top-0 mt-1" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card shadow">
+                            <img src="images/alger-centre1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="card-title"><span class="text-uppercase">à</span> louer</h5>   
+                                    <h6 class="card-title">12000 DA/Jour</h6>
+                                </div>
+                                <p class="card-text fw-lighter mb-1">Maisson/ville</p>
+                                <p class="card-text fw-lighter mt-0 mb-1">8 piece ●  260 m²</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="card-text fw-lighter m-0 mb-1">Alger, Cheraga</p>  
+                                    <small class="card-text m-0 fs-8 text-end">
+                                        <img src="images/icons/commentaire.svg" class="w-30" alt="">
+                                        (2)
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="card-img-overlay ps-1">
+                                <div class="bg-dark-light text-light d-inline raduis-10 p-1 position-absolute bottom-45">
+                                    12
+                                    <img src="images/icons/camera icon.svg" class="" alt="">
+                                </div>
+                                <img src="images/icons/left arrow icon.svg" class="position-absolute bottom-70" alt="">
+                                <img src="images/icons/right arrow icon.svg" class="position-absolute bottom-70 start-89 " alt="">
+                                <img src="images/icons/delete.svg" class="position-absolute start-89 top-0 mt-1" alt="">
+                                <img src="images/icons/edit.svg" class="position-absolute start-78 top-0 mt-1" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 shadow rounded d-flex justify-content-center align-items-center flex-column gap-1 border">
+                        <img src="images/icons/Plus-squar.svg" class="" alt="">
+                        <h4 class="text-center pt-4">Déposer une nouvelle annonce</h4>
+                    </div>
+                    
+                </div>
+            </div>
         </section>
     </main>
 
@@ -256,3 +441,4 @@
 
 </body>
 </html>
+
